@@ -1,0 +1,174 @@
+/*
+Theme Name: MyTheme
+Theme URI: https://wp.bzez.dev
+Author: Samir MOUSSAÏD
+Author URI: https://bzez.dev
+Description: Mon premier thème !
+Requires at least: WordPress 5.0
+Version: 1.0
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+body {
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+	background:white;
+	overflow-x:hidden;
+}
+/*HEADER
+header.site__header {
+	background:linear-gradient(#361d54,#1e1529);
+	text-align:center;
+	width:100vw;
+}
+header.site__header.fullscreen {
+	height:100vh;
+}
+header.site__header img.header-logo{
+	width:100px;
+	margin:50px;
+} 
+.site__header__nav {
+	background:transparent;
+}
+.site__header__nav.site__header__menu {
+	list-style:none;
+	padding:1rem;
+}
+.site__header__nav ul {
+	padding:0;
+	margin:0;
+}
+.site__header__menu li,.site__footer__menu li {
+	display:inline-block;
+}
+.site__header__menu a,.site__footer__menu a{
+	text-decoration:none;
+	color:white;
+		font-size:1.5rem;
+}
+.site__header__menu li:not(:last-child):after,.site__footer__menu li:not(:last-child):after {
+	content:' - ';
+	color:white;
+}
+.site__header__search__form {
+	padding:1rem;
+}
+.site__header__search__form img {
+	width:16px;
+	padding-top:3px;
+}
+.site__header__search__form input[name="s"]{
+	border-radius:5px;
+	border:none;
+	padding:7px;
+}
+.site__header__search__form input[type="submit"]{
+	border-radius:5px;
+	border:2px solid white;
+	padding:5px;
+	background-color:transparent;
+	color:white;
+}
+/*CONTENT
+main.site__content {
+	float:left;
+	margin:auto;
+	max-width:80%;
+	color:rgba(0,0,0,.6);
+	font-size:larger;
+}
+main.site__content img {
+	max-width:100%;
+	border-radius:10px;
+	margin:auto;
+}
+
+.site__content__title {
+	width:100%;
+	text-align:center;
+	color:rgba(0,0,0,.6);
+}
+.site__content__title__hr {
+	width:10%;
+	margin:1rem auto;
+	background-color:rgba(0,0,0,.6);
+}
+aside.site__sidebar {
+	float:right;
+	margin:auto;
+	max-width:20%;
+	color:rgba(0,0,0,.6);
+	font-size:larger;
+}
+.post img {
+	max-width:100%;
+	border-radius:10px;
+	margin:0 auto;
+}
+.alignleft {
+	float:left;
+}
+alignleft:after {
+	float:right;
+}
+
+.post__comments{
+	background:#F1F1F1;
+	padding:1rem;
+	border-radius:10px;
+	font-size:smaller!important;
+}
+footer.site__footer {
+	clear:both;
+	padding:1rem 0;
+	line-height:2rem;
+	width:100%;
+	background:black;
+	text-align:center;
+	color:white
+}
+.project a {
+	color:white
+}
+*/
+body{
+	background:url('img/pattern1.jpg')
+}
+.site__header {
+	height:25vh;
+	background:url("img/junk-food.jpg") no-repeat center center;
+	background-size:cover;
+}
+.nav-item:not(:last-child)>.nav-link:after {
+	content:' -';
+	color:orange;
+	font-weight:900
+}
+a,a:active,a:hover,a:visited {
+	text-decoration:none!important;
+}
+.site__sidebar__widget img {
+	border-radius:.5rem;
+}
+.site__sidebar__widget {
+	margin-bottom:1.5rem;
+}
+.site__sidebar__widget__title {
+	font-size:larger;
+	font-weight:600
+}
+.recette a {
+	color:rgba(0,0,0,.5)
+}
+/* calendar widget */
+.widget_calendar {float: left;width:100%}
+#wp-calendar {width: 100%; }
+#wp-calendar caption { text-align: right; color: #333; font-size: 12px; margin-top: 10px; margin-bottom: 15px; }
+#wp-calendar thead { font-size: 10px; }
+#wp-calendar thead th { padding-bottom: 10px; }
+#wp-calendar tbody { color: #aaa; }
+#wp-calendar tbody td { background: #f5f5f5; border: 1px solid #fff; text-align: center; padding:8px;}
+#wp-calendar tbody td:hover { background: #fff; }
+#wp-calendar tbody .pad { background: none; }
+#wp-calendar tfoot #next { font-size: 10px; text-transform: uppercase; text-align: right; }
+#wp-calendar tfoot #prev { font-size: 10px; text-transform: uppercase; padding-top: 10px; }

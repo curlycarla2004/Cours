@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Titre</h1>
+<button id="get">Get</button>
+<div id="page"></div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    id = 1;
+    $('#get').click(function(){
+        $.post("players.php",{round:id} ,function( resultat ) {
+            console.log(resultat);
+            $('#page').append(resultat)
+        });
+        id++;
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<playlist xmlns="http://xspf.org/ns/0/" version="1">
+  <title/>
+  <creator/>
+  <trackList>
+    <track>
+      <location>https://www.flux4.com</location>
+      <title>Oh Baby --- LCD Soundsystem</title>
+      <annotation>Stream Title: Flux4 radio</annotation>
+      <info>https://www.flux4.com</info>
+    </track>
+  </trackList>
+</playlist>

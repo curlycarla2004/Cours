@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>WebRadio</title>
+
+        <!--Bootstrap and Jquery-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/style.css">
+
+
+        
+    </head>
+
+    <body>
+        
+        <!--Navbar with logo on the left with hamburger menu Player Playlist Podcast Searchbox-->
+        <nav>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark border-bottom" style="background-color: black !important; color: white !important;">
+                <a class="navbar-brand" href="#"><img src="images/iheart-radio.jpg" id="logo" alt="logo" class="src"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Live</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Playlist</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Podcast</a>
+                    </li>
+                        <form class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search"  onkeyup="search(this.value)" placeholder="Dead Search" aria-label="Search" >
+
+                            <!-- Suggestions will be displayed in below div. -->
+                            <div id="display"></div>
+
+
+                            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                       
+                </div>
+              </nav>
+        </nav>
+
+
+        <!--in header the artist plus song title-->
+        <header>
+            <div class="container py-5 text-center">
+                <section class="row">
+                    <div class="col-lg-12 pb-2">
+                        <img src="images/play.jpg" alt="playbutton" width="25%" max-width="25%">
+                    </div>
+                    <div class="col-lg-12 ">
+                        <h1 id="titreencours" style="font-family: 'Satisfy', cursive;">Titre en cours</h1>
+                        <h2 id="groupencours">Group</h2>
+                    </div>
+                </section>
+            </div>
+        </header>
+
+
+        <!--list of previous artists-->
+
+
+
+        <h3 style="font-family: 'Permanent Marker', cursive; text-align: center;" class="pt-3">Searched results</h3>
+
+        <div class="container pt-5" id="resultatderecherche"></div>
+
+
+
+
+        <h3 style="font-family: 'Permanent Marker', cursive; text-align: center;" class="pt-3">Recently played</h3>
+
+        <div class="container pt-5" id="playlist"></div>
+            
+            <!--we can delete this once it is in ajax.js in the function
+
+                 <section class="row">
+                <div class="col-lg-9">
+                    <p class="titre">Titre1</p>
+                    <p class="artist">Group1</p>
+                </div>
+                <div class="col-3">
+                    <p class="time">10:10</p>
+                </div>
+            </section>
+            <section class="row border-top py-3">
+                <div class="col-lg-9">
+                    <p class="titre">Titre2</p id="">
+                    <p class="artist">Group2</p>
+                </div>
+                <div class="col-3">
+                    <p class="time">10:10</p>
+                </div>
+            </section>
+            <section class="row border-top py-3">
+                <div class="col-lg-9">
+                    <p class="titre">Titre3</p>
+                    <p class="artist">Group3</p>
+                </div>
+                <div class="col-3">
+                    <p class="time">10:10</p>
+                </div>
+            </section> -->
+            
+        
+
+        
+        <!--Scripts-->
+        <script type="text/javascript" src="js/ajax.js"></script>
+        <script type="text/javascript" src="playlist.php"></script>
+        <script type="text/javascript" src="search.php"></script>
+        <script type="text/javascript" src="status.xml"></script>
+    </body>
+</html>
