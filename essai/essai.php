@@ -1,15 +1,20 @@
 <?php
-$a= 42;
-if($a==0){
-    echo 'Pomme';
 
-}elseif($a<16){
-    echo 'poire';
-}elseif($a>42){
-    echo 'abricot';
-}else{
-    echo 'orange';
-}
 
+
+
+
+
+// for($i = 0; $i < 100; $i ++){
+//     if($i % 3 === 0 && $i % 5 === 0){
+//         echo '<p style="color:red";>Fizzbuzz<br></p>';
+//     }elseif( $i % 3 === 0){
+//         echo '<p style="color:blue";>Fizz<br></p>';
+//     }else if($i % 5 === 0){
+//         echo '<p style="color:green";>Buzz<br></p>';
+//     }
+//     else {
+//         echo $i .'<br><br>';
+//     }
+// }
 ?>
-
