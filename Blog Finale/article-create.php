@@ -51,7 +51,9 @@ require_once('include/head.php');
         <label for="auteur_id">Auteur:</label>
         <select name="auteur_id" id="auteur_id" class="form-control">
           <?php foreach ($list_auteurs as $auteur) : ?>
+
             <option value="<?php echo $auteur['id']; ?>"><?php echo $auteur['prenom'] . ' ' . $auteur['nom']; ?></option>
+            
           <?php endforeach; ?>
         </select>
       </div>
